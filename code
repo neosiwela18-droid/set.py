@@ -1,0 +1,27 @@
+friends = {'John','Michael','Terry','Eric','Graham'}
+my_friends = {'Reg','Loretta','Colin','John','Graham'}
+cars =['900','420','V70','911','996','V90','911','911','S','328','900']
+
+#Sets - Exercise
+
+#1. Check if ‘Eric’ and ‘John’ exist in friends
+print("John" in friends)
+print("Eric" in friends)
+print("John" in my_friends and "Eric" in my_friends)
+
+#2. combine or add the two sets 
+print("Combined  sets" ,friends.union(my_friends))
+
+#3. Find names that are in both sets
+print("In both sets" ,friends.intersection(my_friends))
+
+#4. find names that are only in friends
+print("Names only in friends" ,friends.difference(my_friends))
+
+#5. Show only the names who only appear in one of the lists
+print( friends ^ my_friends)
+print( friends.symmetric_difference(my_friends))
+#these 2 do the same thing btw
+
+#6. Create a new cars-list without duplicates
+print(list( set(cars)))
